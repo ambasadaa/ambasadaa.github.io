@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    <title>iCare Servis</title>
+
+</head>
+<body>
+    <!-- Navigacijska traka -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">iCare Servis</a>
+
+            <a class="navbar-brand" href="#">
+                <img src="slike/tauzer_logo.svg" alt="Logo" width="50" height="50">
+              </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#onama" class="nav-link">O nama</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a href="#usluge" class="nav-link">Usluge</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a href="#pitanja" class="nav-link">Pitanja</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sadrzaj -->
+     <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Brz i <span class="text-warning"> 
+Pouzdan servis
+                    </span></h1>
+                    <p class="lead my-4">
+                        Imate problem sa mobitelom koji ne možete riješit? Za nas su ti problemi sitnice. Provjereno najbrži i pouzdani servis za vaš mobitel.
+                    </p>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Dogovorite termin</button>
+                </div>
+                <img class="img-fluid w-25 d-none d-sm-block" src="slike/tauzer_slika1.png" alt="">
+            </div>
+        </div>
+     </section>
+
+     <!-- Pretplata -->
+      <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Pretplatite se na novosti</h3>
+
+
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Upišite Email adresu" />
+                    <button class="btn btn-dark btn-lg" type="button">Pretplatite se</button>
+                  </div>
+
+
+            </div>
+        </div>
+      </section>
+
+      <!-- Odjeljci kutija -->
+       <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                         <h3 class="card-title mb-3">
+                            Popravak
+                         </h3>  
+                         <p class="card-text">
+                            Naši stručnjaci će vam pomoći u popravku vašeg mobitela uz originalne dijelove i nasmijanost
+                         </p> 
+                         <a href="popravak.html" class="btn btn-primary">Pročitajte više</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-arrow-left-right"></i>
+                            </div>
+                         <h3 class="card-title mb-3">
+                            Zamjena
+                         </h3>  
+                         <p class="card-text">
+                            Hitno vam treba mobitel a stari vam se pokvario? Donesite vaš stari i zamjenite za novi
+                         </p> 
+                         <a href="zamjena.html" class="btn btn-dark">Pročitajte više</a>
+                        </div>
+
+                    </div>
+                </div>
+                
+            
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-chat-left-text"></i>
+                                </div>
+                             <h3 class="card-title mb-3">
+                                Savjetovanje
+                             </h3>  
+                             <p class="card-text">
+                                Niste sigurni što trebate napraviti? Naši stručnjaci su uvijek na raspolaganju
+                             </p> 
+                             <a href="savjetovanje.html" class="btn btn-primary">Pročitajte više</a>
+                            </div>
+    
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+       </section>
+
+       <section id="onama" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="slike/tauzer_slika2.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>O nama</h2>
+                    <p class="lead">
+Dobrodošli u naš profesionalni servis mobitela, gdje se briga o vašem uređaju pretvara u našu svakodnevnu misiju.
+Stalo nam je do toga da vaši problemi budu riješeni brzo, a da pritom dobijete uslugu koja je povoljna i profesionalna. 
+                    </p>
+                    <p class="lead">
+                        Razumijemo koliko je vaš mobitel važan u svakodnevnom životu, zbog čega težimo pružiti popravke istog dana, koristeći samo originalne dijelove i garantirajući na sve obavljene usluge.
+Vaše povjerenje je naša najveća nagrada, i radimo svakodnevno kako bismo ga zaslužili.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+       </section>
+
+       <section id="usluge" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Usluge</h2>
+                    <p class="lead">
+                        Naš servis mobitela nudi širok spektar usluga kako bi vaš uređaj uvijek bio u savršenom stanju. Posvećeni smo pružanju vrhunske kvalitete usluga, bez obzira na vrstu problema s kojim se suočavate. Naši iskusni tehničari koriste najmoderniju opremu i tehnologiju kako bi brzo i efikasno riješili svaki kvar, uz garanciju na sve obavljene radove. 
+                    </p>
+                    <p class="lead">
+                        Sve naše usluge osmišljene su tako da klijentima osiguramo brzinu, pouzdanost i povoljne cijene. Bez obzira na vrstu problema, naš cilj je vratiti vaš uređaj u ruke potpuno funkcionalan i siguran.
+                    </p>
+                </div>
+                <div class="col-md">
+                <img src="slike/tauzer_slika3.jpg" class="img-fluid" alt="">
+            </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- Pitanja -->
+
+       <section id="pitanja" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Učestala pitanja</h2>
+            <div class="accordion accordion-flush" id="pitanja">
+                <!--Pitanje 1-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pitanje-1">
+                      Gdje se nalazite?
+                    </button>
+                  </h2>
+                  <div id="pitanje-1" class="accordion-collapse collapse" data-bs-parent="#pitanja">
+                    <div class="accordion-body">Nalazimo se u Primorska ulica 29 u gradu Novalji. Poštanski broj: 53291</div>
+                  </div>
+                </div>
+                <!--Pitanje 2-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pitanje-2">
+                     Koje je vaše radno vrijeme?
+                    </button>
+                  </h2>
+                  <div id="pitanje-2" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Naše radno vrijeme je svakim radnim danom od 8:00 do 17:00. Nedjelja i Blagdani smo zatvoreni.</div>
+                  </div>
+                </div>
+                <!--Pitanje 3-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" >
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pitanje-3">
+                      Koliko moram čekati ako ne naručim termin unaprijed?
+                    </button>
+                  </h2>
+                  <div id="pitanje-3" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Prosječno vrijeme čekanja ako se nema rezerviran termin je 45 minuta. Ovaj podatak isto ovisi o vremenu te koji je radni dan u tjednu.</div>
+                  </div>
+                </div>
+                <!--Pitanje 4-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" >
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pitanje-4">
+                        Nalazi li se u blizini vaše poslovnice parking?
+                      </button>
+                    </h2>
+                    <div id="pitanje-4" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Da, pored zgrade naše poslovnice se nalazi besplatni javni parking pa ako dolazite s autom nećete imati problema.</div>
+                    </div>
+                  </div>
+                  <!--Pitanje 5-->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" >
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pitanje-5">
+                        Postoji li garancija na popravljene uređaje?
+                      </button>
+                    </h2>
+                    <div id="pitanje-5" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Da, garancija vrijedi za svaki uređaj koji je kod nas na servisu od dana servisa pa naredna 24 mjeseca.</div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+       </section>
+
+       <section id="kupci" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white">Naši zadovoljni kupci</h2>
+            <p class="lead text-center text-white mb-5">
+                Ovo su neka od iskustva naših zadovoljnih kupaca
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/14.jpg" class="rounded-circle mb-3" alt=""/>
+                            <h3 class="card-title mb-3">Ivan Vidović</h3>
+                            <p class="card-text">"Odlična usluga! Moj mobitel je imao puknut ekran i baterija se brzo praznila. U servisu su to riješili u samo jednom danu. Ekran izgleda kao nov, a baterija sada traje duže nego prije. Vrlo ljubazno osoblje i povoljne cijene. Preporučujem svima!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/3.jpg" class="rounded-circle mb-3" alt=""/>
+                            <h3 class="card-title mb-3">Ana Marković</h3>
+                            <p class="card-text">"Fantastična usluga i profesionalnost! Moj telefon se stalno gasio zbog problema sa softverom, ali u servisu su brzo dijagnosticirali kvar i popravili ga u rekordnom roku. Sigurno ću se vratiti ako ikad zatrebam bilo kakav popravak!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/10.jpg" class="rounded-circle mb-3" alt=""/>
+                            <h3 class="card-title mb-3">Petra Anić</h3>
+                            <p class="card-text">"Impresioniran sam brzinom i kvalitetom usluge! Mobitel mi je pao u vodu, a mislilo sam da je nepopravljiv. U servisu su uspjeli sve sanirati i vratiti ga u potpuno funkcionalno stanje. Uređaj radi kao nov, a cijeli postupak je bio vrlo profesionalan."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/10.jpg" class="rounded-circle mb-3" alt=""/>
+                            <h3 class="card-title mb-3">Igor Badurina</h3>
+                            <p class="card-text">"Stvarno sjajna usluga! Moj mobitel je imao problem s kamerom, slike su bile mutne i nekvalitetne. U servisu su brzo otkrili kvar i zamijenili kameru u roku od par sati. Cijene su skroz fer. Definitivno preporučujem ovaj servis!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- Kontakt i Mapa -->
+        <section class="p-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md">
+                        <h2 class="text-center mb-4">Kontakt podaci</h2>
+                        <ul class="list-group list-group-flush lead">
+                            <li class="list-group-item">
+                                <span class="fw-bold">Adresa:</span> Primorska ulica 29 Novalja
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Mob:</span> +385 99 289 1742
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Fix:</span> +385 663 154
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Email adresa:</span> info@icareservis.hr
+                            </li>                           
+                        </ul>
+                    </div>
+                    <div class="col-md">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zaglavlje -->
+         <footer class="p-5 bg-dark text-white text-center position-relative">
+            <div class="container">
+                <p class="lead">
+                    Sva prava nisu zadržana jer je stranica u svrhu učenja
+                </p>
+                <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                    <i class="bi bi-arrow-up-circle h1"></i>
+                </a>
+            </div>
+         </footer>
+
+         <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="enrollLabel">Dogovorite Termin</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Ispunite formular za dolazak</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="ime" class="col-form-label">
+                                Unesite vaše ime i prezime:
+                            </label>
+                            <input type="text" class="form-control" id="datum">
+                        </div>
+                        <div class="mb-3">
+                            <label for="datum" class="col-form-label">
+                                Unesite datum dolaska:
+                            </label>
+                            <input type="text" class="form-control" id="datum">
+                        </div>
+                        <div class="mb-3">
+                            <label for="vrijeme" class="col-form-label">
+                                Unesite vrijeme dolaska:
+                            </label>
+                            <input type="text" class="form-control" id="datum">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                  <button type="button" class="btn btn-primary">Spremi promjene</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYW1iYXNhZGEiLCJhIjoiY20xMHRxaWFoMGYyajJqczQzNGMxbXYwbiJ9.sIVRZTQHpeNoMu9vtO-qvw';
+            var map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/mapbox/streets-v11',
+              center: [14.87164, 44.56156], 
+              zoom: 18
+            });
+          </script>
+        </script>
+</body>
+</html>

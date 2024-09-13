@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popravak Mobitela</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigacijska traka -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">iCare Servis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Početna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#popravak">Popravak Mobitela</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#video">Video</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Popravak mobitela -->
+    <section id="popravak" class="p-5 text-center bg-light">
+        <div class="container">
+            <h1 class="mb-4">Popravak Mobitela</h1>
+            <p class="lead">Naša usluga popravka mobitela pruža brz i učinkovit servis uz vrhunske dijelove. Naši stručnjaci će se pobrinuti da vaš mobitel ponovno bude u savršenom stanju. Ovaj Video smo stavili sa naših društvenih mreža koji služi kao promotivni video te je iz toga razloga na engleskom jeziku.</p>
+            <p class="text-muted">Kontaktirajte nas za više informacija ili zakazivanje termina.</p>
+        </div>
+    </section>
+
+    <!-- Video sekcija -->
+    <section id="video" class="p-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Pogledajte naš video</h2>
+            <div class="video-container mb-4">
+                <iframe src="tauzer_video.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="text-muted">Ovdje možete pogledati video koji prikazuje naš servis u akciji i saznati više o tome kako radimo.</p>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; Video je napravljen sa umjetnom intaligencijom u svrhu učenja</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
